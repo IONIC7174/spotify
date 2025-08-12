@@ -12,7 +12,7 @@ const Home=()=>{
     <div className="h-full w-full flex">{/* whole page */}
         <div className="h-full w-1/5 bg-black">{/* sidebar */}
             <div className="p-6">
-                <Icon icon="logos:spotify"width="125"/>
+                <span className="text-green-500 text-lg ">MUSICO </span>
             </div>
             <div className="py-2 pb-8">
                 <IconText iconName={"material-symbols:home"} displayText={"Home"} active={true}/>

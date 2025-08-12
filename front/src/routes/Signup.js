@@ -45,7 +45,7 @@ const SignupComponent=()=>{
         
         <div className="w-full h-full flex flex-col items-center">
             <div className="logo w-full p-6 border-b border-solid border-gray-300 flex justify-center">
-                <Icon icon="logos:spotify"width="150"/>
+                <span className="text-green-500 text-lg ">MUSICO </span>
 
             </div>
             <div className="inputRegion w-1/3 py-10 flex items-center flex-col">

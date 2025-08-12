@@ -7,6 +7,7 @@ import songContext from "../context/songContext";
 import CreatePlaylistModal from"../modals/createplaylistmodal"
 import AddtoPlayListModal from "../modals/addPlaylistModal";
 import { makeautheticatedPOSTReq } from "../utils/serverhelpers";
+import { Link } from "react-router-dom";
 
 
 
@@ -90,7 +91,7 @@ const LoggedInContainer=({children,curractive})=>{
         <div className={`${currentSong?"h-10/11":"h-full"} w-full flex `}>
         <div className="h-full w-1/5 bg-black">{/* sidebar */}
             <div className="p-6">
-                <Icon icon="logos:spotify"width="125"/>
+                <span className="text-green-500 text-lg ">MUSICO </span>
             </div>
             <div className="py-2 pb-8">
                 <IconText iconName={"material-symbols:home"} displayText={"Home"} active={curractive==="Home"} targetLink={"/LoggedInHome"}/>
@@ -115,7 +116,7 @@ const LoggedInContainer=({children,curractive})=>{
                             <div className="h-1/2 border-r "></div>
                         </div>
                         <div className="w-1/3 h-full flex justify-around items-center">
-                            <TextWithHover displayText={"Upload Song"}/>
+                          <Link to="/UploadSong"> <TextWithHover displayText={"Upload Song"}/></Link> 
                             <div className="px-3 h-10 w-10 bg-white flex items-center justify-center rounded-full font-semibold cursor-pointer">KM</div>
                         </div>
                     </div>
@@ -152,7 +153,7 @@ const LoggedInContainer=({children,curractive})=>{
                     <Icon icon="mdi:skip-next-outline"className="text-4xl cursor-pointer text-gray-500 hover:text-white" />
                     
                 </div>
-                <div>progressssssssss</div>
+                <div></div>
             </div>
             <div className="w-1/4 flex justify-end">
                 <Icon icon="ic:round-playlist-add" className="text-4xl cursor-pointer text-gray-500 hover:text-white" onClick={()=>{setaddPlayListModalOpen(true)}}/>

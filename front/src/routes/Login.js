@@ -39,11 +39,11 @@ const LoginComponent=()=>{
     return (
         <div className="w-full h-full flex flex-col items-center">
             <div className="logo w-full p-6 border-b border-solid border-gray-300 flex justify-center">
-                <Icon icon="logos:spotify"width="150"/>
+                <span className="text-green-500 text-lg ">MUSICO </span>
 
             </div>
             <div className="inputRegion w-1/3 py-10 flex items-center flex-col">
-            <div className="font-bold mb-10">To continue ,Login To Spotify</div>
+            <div className="font-bold mb-10">To continue ,Login To Musico</div>
             <TextInput label="Email id or username" placeholder="Email id or username" className="my-5" value={email} setValue={setEmail}/>
             <Password label="password" placeholder="password"value={password} setValue={setpassword}/>
             <div className="w-full flex justify-end mt-8 ">
@@ -59,7 +59,7 @@ const LoginComponent=()=>{
                 Don't have an account ?
                 </div>
             <div className="border border-gray-500 w-full text-gray-500 font-bold flex items-center justify-center rounded-full py-3">
-                <Link to ="/signup">SIGN UP FOR SPOTIFY</Link>
+                <Link to ="/signup">SIGN UP FOR MUSICO</Link>
                 </div>
             
             </div>
